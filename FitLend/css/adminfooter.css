@@ -1,0 +1,10 @@
+/* css/adminfooter.css */
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

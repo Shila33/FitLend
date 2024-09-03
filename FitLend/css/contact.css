@@ -1,0 +1,171 @@
+/* css/contact.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-form {
+    padding: 20px;
+    width: 600px; 
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+        border-radius: 5px;;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"], 
+.contact-form input[type="tel"], 
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 120px; /* Adjusted height */
+    resize: vertical;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+button {
+    padding: 12px 50px; /* Adjusted padding */
+    background: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+/* Ensure footer stays at the bottom */
+footer {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.quick-links, .services, .newsletter, .social-media {
+    flex: 1;
+    margin: 10px;
+}
+
+.quick-links ul, .services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .services ul li {
+    margin: 5px 0;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+}
+
+.newsletter button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media a:hover {
+    color: #ff0000;
+}
+
+.social-media i {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    font-size: 14px;
+}

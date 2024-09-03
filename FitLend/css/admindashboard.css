@@ -1,0 +1,231 @@
+/* css/admindashboard.css */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh; 
+}
+
+.dashboard {
+    display: flex;
+    flex: 1;
+    min-height: 0; 
+}
+
+.sidebar {
+    width: 300px; 
+    background: #000000;
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+.content-section {
+    display: block; 
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.equipment-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Ensure the image covers the box */
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.btn-delete {
+    background: #e74c3c;
+}
+
+.btn-delete:hover {
+    background: #c0392b;
+}
+
+.btn-approve {
+    background: #2ecc71;
+}
+
+.btn-approve:hover {
+    background: #27ae60;
+}
+
+.btn-returned {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.btn-edit {
+    background: #f39c12;
+}
+
+.btn-edit:hover {
+    background: #e67e22;
+}
+
+.btn-add {
+    background: #3498db;
+}
+
+.btn-add:hover {
+    background: #2980b9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-cancel {
+    background: #7f8c8d;
+}
+
+.btn-cancel:hover {
+    background: #95a5a6;
+}
+
+.btn-update,
+.btn-add {
+    background: #3498db;
+}
+
+.btn-update:hover,
+.btn-add:hover {
+    background: #2980b9;
+}
+
+/* Add Equipment Form */
+#add-form .modal-content {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Edit Equipment Form */
+#edit-form .modal-content {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Sticky Footer */
+.admin-footer {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    table, th, td {
+        padding: 5px;
+    }
+    
+    .equipment-image {
+        width: 40px;
+        height: 40px;
+    }
+}

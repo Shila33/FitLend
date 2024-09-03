@@ -1,0 +1,87 @@
+/* css/register.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/register_bg.jpg') no-repeat center center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.register-form {
+    padding: 20px;
+    max-width: 400px;
+    width: 350px;
+    margin: 0 auto;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.59);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+    border-radius: 5px;
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-form label {
+    font-weight: bold;
+}
+
+.register-form input[type="text"], 
+.register-form input[type="email"], 
+.register-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-form input[type="text"], 
+.register-form input[type="email"], 
+.register-form input[type="password"], 
+.register-form input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+.register-form p {
+    text-align: center;
+}
+.register-form p a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+.register-form p a:hover{
+    color: rgb(255, 255, 255);
+}

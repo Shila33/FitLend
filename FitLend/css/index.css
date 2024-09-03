@@ -1,0 +1,287 @@
+/* css/index.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    height: 70vh;
+    display: flex;  
+    margin-top: 10rem;
+    margin-left: 10rem;
+    justify-content: start;
+    align-items: start;
+    color: #fff;
+    text-align: start;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.explore-button {
+    background: #ff0000;
+    color: #ffffff;
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.explore-button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+/* Simple Process Section */
+.simple-process {
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.59);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+    border-radius: 5px;
+    margin-top: 80px;
+}
+
+.simple-process h2 {
+    color: #000;
+}
+
+.process-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.process-item {
+    flex: 1;
+    margin: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.process-item i {
+    font-size: 3rem;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.process-item h3 {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.59);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+    border-radius: 5px;
+    margin-top: 80px;
+}
+
+.reviews h2 {
+    color: #000;
+}
+
+.reviews-slider {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    height: 400px; 
+}
+
+.review-card {
+    flex: 0 0 46%; 
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
+}
+
+.review-card .fa-user-circle {
+    font-size: 5rem;
+    color: #000;
+}
+
+.review-card .stars {
+    color: #ffb400;
+    margin: 10px 0;
+}
+
+.review-card blockquote {
+    font-size: 20px;
+    margin: 0;
+}
+
+.review-card::before, .review-card::after {
+    content: '“';
+    font-size: 6rem;
+    color: #777;
+    position: absolute;
+}
+
+.review-card::before {
+    top: -10px;
+    left: 10px;
+}
+
+.review-card::after {
+    bottom: -10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+/* Ensure footer stays at the bottom */
+footer {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.quick-links, .services, .newsletter, .social-media {
+    flex: 1;
+    margin: 10px;
+}
+
+.quick-links ul, .services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .services ul li {
+    margin: 5px 0;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media a:hover {
+    color: #ff0000;
+}
+
+.social-media i {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .explore-button {
+        padding: 15px 30px;
+    }
+
+    .reviews-slider {
+        flex-direction: column;
+    }
+
+    .review-card {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .simple-process .process-columns {
+        flex-direction: column;
+    }
+
+    .process-item {
+        max-width: 100%;
+    }
+}

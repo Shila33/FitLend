@@ -1,0 +1,114 @@
+/* css/userfooter.css */
+
+/* Ensure the entire page height is 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Content section takes up remaining space */
+main {
+    flex: 1;
+}
+
+/* Footer Styles */
+footer {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.quick-links, .services, .newsletter, .social-media {
+    flex: 1;
+    margin: 10px;
+}
+
+.quick-links ul, .services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .services ul li {
+    margin: 5px 0;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media a:hover {
+    color: #ff0000;
+}
+
+.social-media i {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    font-size: 14px;
+}

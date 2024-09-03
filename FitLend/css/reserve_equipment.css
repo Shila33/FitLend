@@ -1,0 +1,172 @@
+/* css/reserve_equipment.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.reservation-form {
+    padding: 20px;
+    width: 600px; /* Increased width */
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.59);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+    border-radius: 5px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.reservation-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adjusted spacing */
+}
+
+.reservation-form label {
+    font-weight: bold;
+}
+
+.reservation-form input[type="date"], 
+.reservation-form input[type="number"], 
+.reservation-form .payment-methods {
+    padding: 12px; /* Adjusted padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 20px;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-methods img {
+    height: 40px;
+    width: 70px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+button {
+    padding: 12px 30px; /* Adjusted padding */
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+/* Footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.quick-links, .services, .newsletter, .social-media {
+    flex: 1;
+    margin: 10px;
+}
+
+.quick-links ul, .services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .services ul li {
+    margin: 5px 0;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+}
+
+.newsletter button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media a:hover {
+    color: #ff0000;
+}
+
+.social-media i {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    font-size: 14px;
+}

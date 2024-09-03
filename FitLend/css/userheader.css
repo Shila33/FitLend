@@ -1,0 +1,33 @@
+/* css/userheader.css */
+header {
+    background: #000000;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.username {
+    font-weight: bold;
+}

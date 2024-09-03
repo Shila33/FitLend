@@ -1,0 +1,77 @@
+/* css/login.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/login_bg.jpg') no-repeat center center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.login-form {
+    padding: 20px;
+    max-width: 400px;
+    width: 350px;
+    margin: 0 auto;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.59);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+    border-radius: 5px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form label {
+    font-weight: bold;
+}
+
+.login-form input[type="text"], 
+.login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #ff0000;
+}
+.login-form p{
+    text-align: center;
+}
+.login-form p a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+.login-form p a:hover{
+    color: rgb(255, 255, 255);
+}

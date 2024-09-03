@@ -1,0 +1,33 @@
+/* css/adminheader.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.logout {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
